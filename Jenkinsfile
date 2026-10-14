@@ -42,10 +42,12 @@ pipeline {
     }
 
     stage('Frontend tests') {
-      steps {
-        powershell 'npm.cmd --prefix frontend test -- --watchAll=false'
-      }
+    steps {
+        dir('frontend') {
+            powershell 'npm test -- --passWithNoTests'
+        }
     }
+}
 
     stage('Frontend production build') {
       steps {
