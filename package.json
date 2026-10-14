@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "lint": "^1.1.2",
+    "npm": "^9.6.4"
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1"
+  }
+}
